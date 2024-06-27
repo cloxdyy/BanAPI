@@ -1,0 +1,22 @@
+{
+  "name": "banapi",
+  "version": "1.0.0",
+  "description": "discord bot using roblox's new ban api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloxdyy/BanAPI.git"
+  },
+  "author": "@cloxdyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloxdyy/BanAPI/issues"
+  },
+  "homepage": "https://github.com/cloxdyy/BanAPI#readme",
+  "dependencies": {
+    "openblox": "^1.0.10"
+  }
+}
