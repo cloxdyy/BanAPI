@@ -1,4 +1,4 @@
-import { GUILD_ID, BLOXLINK_API_KEY } from "../../config.js";
+import { GUILD_ID, BLOXLINK_API_KEY, ASSETS } from "../../config.js";
 import { EmbedBuilder, ApplicationCommandType } from "discord.js";
 import { UserRestrictionsApi } from "openblox/cloud";
 import { ClassicThumbnailsApi, ClassicUsersApi } from "openblox/classic";
@@ -56,6 +56,10 @@ export const Context = {
         })
         .setColor("#992D22")
         .setDescription(`\`\`\`json\n${JSON.stringify(restrictions.gameJoinRestriction, null, 2)}\n\`\`\``)
+        .setFooter({
+            text: "BanAPI",
+            iconURL: ASSETS.json
+        })
 
         if (restrictions.startTime != null) {
             embed.setTimestamp(restrictions.startTime)

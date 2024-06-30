@@ -130,7 +130,8 @@ export const Slash = {
                     .setColor("#992D22")
                     .setDescription(`\`\`\`json\n${JSON.stringify(restrictions.gameJoinRestriction, null, 2)}\n\`\`\``)
                     .setFooter({
-                        imageUrl: url
+                        text: "BanAPI",
+                        iconURL: ASSETS.json
                     })
 
                     if (restrictions.startTime != null) {
@@ -156,6 +157,10 @@ export const Slash = {
                 })
                 .setColor("#992D22")
                 .setDescription(`\`\`\`json\n${JSON.stringify(restrictions.gameJoinRestriction, null, 2)}\n\`\`\``)
+                .setFooter({
+                    text: "BanAPI",
+                    iconURL: ASSETS.json
+                })
 
                 if (restrictions.startTime != null) {
                     embed.setTimestamp(restrictions.startTime)
@@ -180,6 +185,10 @@ export const Slash = {
                     })
                     .setColor("#992D22")
                     .setDescription(`\`\`\`json\n${JSON.stringify(restrictions.gameJoinRestriction, null, 2)}\n\`\`\``)
+                    .setFooter({
+                        text: "BanAPI",
+                        iconURL: ASSETS.json
+                    })
 
                     if (restrictions.startTime != null) {
                         embed.setTimestamp(restrictions.startTime)
